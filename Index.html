@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesse Brodbeck - Bewerbung</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Jesse Brodbeck</h1>
+        <p>Meine Bewerbungswebseite</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">Über Mich</a></li>
+            <li><a href="#certificates">Zeugnisse</a></li>
+            <li><a href="#video">Vorstellungsvideo</a></li>
+            <li><a href="#drone">Drohne</a></li>
+            <li><a href="#pc">PC</a></li>
+            <li><a href="#game">Unity Spiel</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>Über mich</h2>
+        <p>Mein Name ist Jesse Brodbeck, ich bin 14 Jahre alt und gehe im OZ Diepoldsau zur Schule. Da ich mich schon mein ganzes Leben für Technik, Computer und Software interessiere, wollte ich für meine Bewerbung mit einer innovativen Webseite überzeugen. Das Grundgerüst der Webseite habe ich aus dem Internet heruntergeladen und sie anschließend in VS Code mit dem Wissen, das ich mir bei freeCodeCamp angeeignet habe, an meine Vorstellungen angepasst.</p>
+    </section>
+
+    <section id="certificates">
+        <h2>Zeugnisse</h2>
+        <p>Hier können Sie meine Zeugnisse als PDF herunterladen:</p>
+        <ul>
+            <li><a href="https://i.ibb.co/SspDFX4/Jesse-Primar.jpg" download>Zeugnisse Unterstufe</a></li>
+            <li><a href="https://i.ibb.co/0JkRgTQ/Jesse-1-SJ-1-2-Sem.jpg" download>Erste Oberstufe 1. und 2. Semester</a></li>
+            <li><a href="https://i.ibb.co/YR0qp96/Jesse-2-SJ-1-Sem.jpg" download>Zweite Oberstufe 1. Semester</a></li>
+            <li><a href="https://i.ibb.co/pWGwh5m/Stellwerk.jpg" download>Stellwerk</a></li>
+        </ul>
+    </section>
+
+    <section id="video">
+        <h2>Vorstellungsvideo</h2>
+        <p>Sehen Sie sich gerne mein Vorstellungsvideo an</p>
+        <div class="video-placeholder">
+            <iframe src="https://player.vimeo.com/video/951204279?h=143d2f7847" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="drone">
+        <h2>Meine selbstgebaute FPV Drohne</h2>
+        <div class="image-container">
+            <img src="https://i.ibb.co/Yb7Yxvc/eachine-tyro-79-pro.jpg" alt="Bild der FPV-Drohne">
+        </div>
+        <p>Um meine eigene Drohne zu bauen, habe ich in Werkzeuge, Teile und einen Lötkolben investiert. Ich habe mir selbst das Löten beigebracht, um den Bausatz zusammenzubauen. Anschließend absolvierte ich die Drohnenprüfung bei der EASA (European Union Aviation Safety Agency). Außerdem habe ich einen Controller und eine FPV-Brille gekauft, um die Drohne fliegen zu können. Nachdem ich sie zusammengebaut hatte, konfigurierte ich sie auf meinem selbstgebauten PC. </p>
+    </section>
+
+    <section id="pc">
+        <h2>Mein selber zusammengebauter PC</h2>
+        <div class="image-placeholder">
+            <a href="https://ibb.co/H4BKS0n"><img src="https://i.ibb.co/r0FQjg4/IMG-2051.jpg" alt="IMG-2051" border="0"></a>
+        </div>
+        <p>Über einen Zeitraum von rund zwei Jahren konnte ich mir meinen grossen Wunsch erfüllen, mir einen eigenen PC zu leisten und diesen zu einem wahren Kraftpaket entwickeln. Ich habe die Teile einzeln ausgesucht, damit mein PC meinen Ansprüchen genügen konnte, wie zum Beispiel Gaming, Programmieren oder ein CAD-Programm zu benutzen. Seitdem ich meinen PC habe rüste ich ihn laufend mit neuen Teilen auf, weil es mir stets viel Spass bereitet.</p>
+    </section>
+
+    <section id="game">
+        <h2>Unity Spiel</h2>
+        <p>Probieren Sie mein selbstprogrammiertes Unity Spiel direkt im Browser aus</p>
+        <div class="game-container">
+            <iframe src="https://i.simmer.io/@IluminatiX/falppy-game" style="width:960px;height:600px"></iframe>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <p>Sie können mich unter <a href="mailto:j.brodbeck@gmx.ch">j.brodbeck@gmx.ch</a> oder 077 474 59 51 erreichen.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Jesse Brodbeck</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
